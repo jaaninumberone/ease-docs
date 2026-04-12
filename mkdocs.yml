@@ -1,0 +1,64 @@
+site_name: EASE Workflows Handbook
+site_description: Four workflows — report generation, patents, clinical success, signal quality — with links to repos and sources
+site_url: https://YOUR_GITHUB_USERNAME.github.io/ease-docs/
+
+# Fragment files included via pymdownx.snippets only — not standalone pages
+exclude_docs: |
+  includes/*
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path:
+        - docs
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Workflows:
+      - Report Generation:
+          - Overview: workflows/reporting/index.md
+          - References: workflows/reporting/references.md
+      - Patents:
+          - Overview: workflows/patents/overview.md
+          - References: workflows/patents/references.md
+      - Clinical Success:
+          - Overview: workflows/clinical-success/index.md
+          - References: workflows/clinical-success/references.md
+      - Signal Quality:
+          - Overview: workflows/signal-quality/index.md
+          - References: workflows/signal-quality/references.md
+  - Research notes:
+      - Patents (raw notes pointer): research/patents/README.md
+
+plugins:
+  - search

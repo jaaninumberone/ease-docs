@@ -1,6 +1,6 @@
 # My Workflows
 
-This is **one page**: each workflow has a **short default view**, then an **expand control** that reveals the **full hyperlinked narrative** (Google Docs, GitHub placeholders, and public sources). Use the table of contents (right) or the headings below to jump. **References** for each workflow remain separate pages in the nav.
+Over this contractual period, I contributed to **4 workflows** that are explained in a short overview, you can expand the same for a **detailed narrative** with appropriate **references** and links to documentation/code. 
 
 ## Report Generation {#report-generation}
 
